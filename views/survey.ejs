@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Wafflemakr</title>
+<% include header %>
+<body>
+    <br>
+    <br>
+    <div class="col-lg-6">
+
+    <form method="post" action="/survey">
+        <fieldset>
+            <legend>SURVEY</legend>
+            <h4>Llena la encuesta y gana criptomonedas!</h4>
+            <br>
+
+            <div class="form-group">
+                <label for="email">Dirección Email</label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Ingresa tu email">
+                <small id="emailHelp" class="form-text text-muted">Te enviaremos un email con la confirmación de la transacción</small>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Selecciona tu rango de edad</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                    Menos de 18
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                    18-25
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                    26-35
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+                    36-50
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios5" value="option5">
+                    Más de 50
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend>¿Hace cuánto conociste las criptomonedas?</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios2" id="optionsRadios1" value="option1" checked="">
+                    Menos de 1 Año
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios2" id="optionsRadios2" value="option2">
+                    Entre 1 y 2 años
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios2" id="optionsRadios2" value="option3">
+                    Entre 2 y 4 años
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios2" id="optionsRadios2" value="option4">
+                    Más de 4 años
+                    </label>
+                </div>
+
+            </fieldset>
+            
+            <div class="form-group">
+                <label for="exampleTextarea">Wallet Litecoin Testnet:</label>
+                <textarea class="form-control" id="exampleTextarea" name="wallet" rows="1"></textarea>
+            </div>
+            
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    
+    </div>
+    <br>
+    <br>
+    <p>LTC Price = <%= lastPrice %></p>
+</body>
+</html>

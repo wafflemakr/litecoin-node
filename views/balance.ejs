@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Wafflemakr</title>
+<% include header %>
+<body>
+    <br>
+    <br>
+    <p class="text-primary">Get Address Balance</p>
+    <form method="post" action="/balance">
+        <input type="text" placholder='Enter Your LTC Address' name='addr'>
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+    <br>
+    <p class="text-primary" style="display:<%= display %>" >Your Balance is: <%= balance %></p>
+    <br>
+    <p class="text-warning">LTC Price = <%= lastPrice %></p>
+</body>
+</html>

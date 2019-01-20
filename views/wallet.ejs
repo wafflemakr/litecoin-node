@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Wafflemakr</title>
+<% include header %>
+<body>
+    <br>
+    <br>
+    <p class="text-primary">Create New LTC Testnet Wallet</p>
+    <form method="post" action="/wallet">
+        <input type="submit" class="btn btn-primary" value="Create">
+    </form>
+    <br>
+    <p class="text-primary" style="display:<%= display %>" >Your New Wallet is: <%= newAdd %></p>
+    <br>
+    <img src="<%= qrcode %>" style="display:<%= display %>"/>
+    <br>
+    <br>
+    <p class="text-warning">LTC Price = <%= lastPrice %></p>
+
+</body>
+</html>
+
